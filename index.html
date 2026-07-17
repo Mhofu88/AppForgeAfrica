@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AppForge Africa — Apps Built for Your Business</title>
 <meta name="description" content="AppForge Africa builds apps for businesses and merchants — fast, affordable, and made for the way you actually work.">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#182848">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@500;700&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
 <style>
@@ -342,6 +344,12 @@
     </div>
   </div>
 </footer>
+
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('service-worker.js');
+}
+</script>
 
 </body>
 </html>
